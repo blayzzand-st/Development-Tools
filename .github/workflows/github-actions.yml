@@ -15,7 +15,7 @@ jobs:
         with:
           pattern: help.py
       - name: Build EXE from Python Script
-        uses: Nuitka/Nuitka-Action@v0.4
+        uses: Nuitka/Nuitka-Action@v0.1.0
         with:
           script-name: main.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
