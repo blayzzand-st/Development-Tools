@@ -8,7 +8,7 @@ if __name__ == '__main__':
     try:
         while True:
             command = input()
-            if command != "EXIT":
+            if command != "exit":
                 a, op, b = command.split(' ')
                 print(calculator(a, op, b))
             else:
