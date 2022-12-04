@@ -18,7 +18,7 @@ class SimpleTest(unittest.TestCase):
         self.assertEqual(main.calculator('0', '-', '0'), 0)
 
     def test_multiply(self):
-        self.assertEqual(main.calculator('32', '*', '32'), 1024)
+        self.assertEqual(main.calculator('32', '*', '32'), 10240)
         self.assertEqual(main.calculator('-32', '*', '32'), -1024)
         self.assertEqual(main.calculator('-32', '*', '-32'), 1024)
         self.assertEqual(main.calculator('32', '*', '-32'), -1024)
