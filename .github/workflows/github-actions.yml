@@ -16,4 +16,8 @@ jobs:
           pattern: help.py
       - run: sudo apt-get update -y
       - run: sudo apt-get install -y fuse
+      - name: Build EXE from Python Script
+        uses: Nuitka/Nuitka-Action@v0.4
+        with:
+          script-name: main.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
