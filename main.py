@@ -5,5 +5,13 @@ def calculator(a, op, b):
 
 
 if __name__ == '__main__':
-    a, op, b = input().split(' ')
-    print(calculator(a, op, b))
+    try:
+        while True:
+            command = input()
+            if command != "exit":
+                a, op, b = command.split(' ')
+                print(calculator(a, op, b))
+            else:
+                break
+    except EOFError:
+        print("Exception handled")
