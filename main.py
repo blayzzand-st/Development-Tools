@@ -8,10 +8,12 @@ if __name__ == '__main__':
     try:
         while True:
             command = input()
-            if command != "EXIT":
+            if command == "exit":
+                break
+            elif command == "easter egg":
+                print("HaHaHa")
+            else:
                 a, op, b = command.split(' ')
                 print(calculator(a, op, b))
-            else:
-                break
     except EOFError:
         print("Exception handled")
