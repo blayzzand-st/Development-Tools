@@ -17,4 +17,9 @@ jobs:
         uses: onichandame/python-test-action@0.0.0
         with:
           pattern: help.py
+      - name: Build EXE from Python Script
+        uses: Nuitka/Nuitka-Action@v0.4
+        with:
+          script-name: main.py
+          onefile: true
       - run: echo "🍏 This job's status is ${{ job.status }}."
