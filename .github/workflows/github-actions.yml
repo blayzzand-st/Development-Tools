@@ -15,4 +15,5 @@ jobs:
         with:
           pattern: help.py
       - run: sudo apt-get update -y
+      - run: sudo apt-get install -y fuse
       - run: echo "🍏 This job's status is ${{ job.status }}."
