@@ -11,7 +11,7 @@ if __name__ == '__main__':
             if command == "exit":
                 break
             elif command == "easter egg":
-                print("HHHHH")
+                print("HA")
             else:
                 a, op, b = command.split(' ')
                 print(calculator(a, op, b))
